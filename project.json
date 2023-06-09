@@ -1,0 +1,16 @@
+{
+    "targets": {
+      "create_branch": {
+        "executor": "unicorn-packager:new_branch"
+      },
+      "deploy": {
+        "executor": "unicorn-packager:merge_master"
+      },
+      "sync": {
+        "executor": "unicorn-packager:sync_master"
+      },
+      "docker_ignore": {
+        "executor": "unicorn-packager:pre_deploy"
+      }
+  }
+}
